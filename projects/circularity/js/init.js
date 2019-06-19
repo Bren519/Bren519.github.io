@@ -26,7 +26,7 @@ var circles = [];
 
         // TODO 2 : Create a function that draws a circle  //
         function drawCircle() {
-    circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
+    circle = draw.randomCircleInArea(canvas, true, true, '#999', 3);
     physikz.addRandomVelocity(circle, canvas);
     view.addChild(circle);
     circles.push(circle);
@@ -35,7 +35,7 @@ var circles = [];
         // TODO 3 : Done
         // TODO 7 : Create a Loop to call drawCircle 100 times
 var circleAmount = 0;
-    while(circleAmount < 100){
+    while(circleAmount < 1000){
         drawCircle();
         circleAmount++;
     }
@@ -76,9 +76,9 @@ var circleAmount = 0;
             // TODO 5 : Call game.checkCirclePosition on your circles.
           
             // TODO 8 : Iterate over the array
-      for (var Animate = 0; Animate < 100; Animate++)  {
+      for (var Animate = 0; Animate < 1000; Animate++)  {
         physikz.updatePosition(circles[Animate]);
-        game.checkCirclePosition(circles[Animate]); //PROBLEM HERE
+        game.checkCirclePosition(circles[Animate]);
 }    
          
 
