@@ -19,7 +19,7 @@ var level01 = function (window) {
             speed: -3,
             gameItems: [
                 {type: 'MarkiMOO',x:1700,y:groundY - 10},
-           /*     {type: 'MarkiMOO',x:1900,y:groundY - 120},
+                {type: 'MarkiMOO',x:1900,y:groundY - 120},
                 {type: 'sawblade',x:400,y:groundY - 10},
                 {type: 'sawblade',x:550,y:groundY - 20},
                 {type: 'sawblade',x:700,y:groundY - 15},
@@ -28,7 +28,7 @@ var level01 = function (window) {
                 {type: 'sawblade',x:1200,y:groundY - 15},
                 {type: 'sawblade',x:1350,y:groundY - 20},
                 {type: 'sawblade',x:1500,y:groundY - 120},
-                */
+
             ],
 
             enemies: [
