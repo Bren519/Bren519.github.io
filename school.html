@@ -1,12 +1,13 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
     <head>
-        <Title> Bren's Amazing Website </Title>
+        <Title>Bren's Portfolio </Title>
 
  <style>
         h1  {
            font-family:monospace;
             color:blue;
+            padding:10px;
 
         }
 
@@ -32,14 +33,31 @@
               background:rgb(20, 42, 79);
                 color: rgb(45, 45, 45);
           }
-
-          .sidebar {  margin-right: 15px;
+          .sidebar {  margin-right: 25px;
                 padding: 10px;
           }
+           #portfolio {
+                list-style-type: none;
+                padding-left: 0;
+            }
 
-          .sidebar img {width: 150px;}
+            #portfolio li {
+                background: #fff;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
 
-          nav {
+            #portfolio li:hover {
+                background: #eee;
+            }
+
+            #portfolio a {
+                text-decoration: none;
+                color: #454545;
+            }
+
+             nav {
                 background: rgb(black);
                 margin: 0 auto;
                 display: flex;
@@ -65,34 +83,46 @@
             }
             li {
             padding: 10px;
-
             }
 
-            .content {
-                margin-right:30px;
-            }
 </style>
-     </head>
+
+
+    </head>
+
+    <body>
+         <div id="all-contents">
+        <nav>
+            <h3>Bren's Glorious Website</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="school.html">School Work</a></li>
+            </ul>
+        </nav>
+    </div>
 
 
 
-<body>
-           <div id="all-contents">
-                <nav>
-                    <h3>Bren's Glorious Website </h3>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="school.html">School Work</a></li>
-                        </ul>
-                </nav>
-                <main>
-                    <h4>Things I made for school go here! </h4>
+           <nav>
+            <!-- Nav stuff here...-->
+        </nav>
+
+        <div id="all-contents">
+
+        <main>
+            <div class="content">
+                <h1>Portfolio</h1>
+                <ul id="portfolio">
+                </ul>
+            </div>
+        </main>
 
 
 
-                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-                        <script id="portfolioScript">$(document).ready(function() {$.getJSON('projects/projects.json').then(function(data) { data.projects.forEach(function(project){ $('#portfolio').append('<li><a href="projects/' + project.name + '/">' + project.title + ' : ' + project.description + '</a></li>'); }); }); });</script>
-                </main>
-</body>
-                <div class="sidebar">
+
+      </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script id="portfolioScript">$(document).ready(function() {$.getJSON('projects/projects.json').then(function(data) { data.projects.forEach(function(project){ $('#portfolio').append('<li><a href="projects/' + project.name + '/">' + project.title + ' : ' + project.description + '</a></li>'); }); }); });</script>
+    </body>
+</html>
