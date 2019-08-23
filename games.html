@@ -4,6 +4,18 @@
         <Title>Bren's Portfolio </Title>
 
  <style>
+
+@keyframes oof {
+  0% { border: 5px solid red}
+  20% {border: 5px solid yellow}
+  40% {border: 5px solid green}
+  60% {border: 5px solid blue}
+  80% {border: 5px solid purple}
+  100% {border: 5px solid red}
+}
+
+/* The element to apply the animation to */
+
         h1  {
            font-family:monospace;
             color:blue;
@@ -23,11 +35,22 @@
         }
 
           #all-contents {
+
                 max-width: 1000px;
                 margin: auto;
-                background: white;
+                background-color: white;
                 border-radius:40px;
+                border: 5px solid darkblue;
+                animation: oof 5s;
+                  animation-iteration-count: infinite;
+
+
+
+
           }
+
+
+
 
           body{
               background:rgb(20, 42, 79);
