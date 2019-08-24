@@ -35,7 +35,7 @@ var circles = [];
         // TODO 3 : Done
         // TODO 7 : Create a Loop to call drawCircle 100 times
 var circleAmount = 0;
-    while(circleAmount < 200){
+    while(circleAmount < 400){
         drawCircle();
         circleAmount++;
     }
@@ -76,7 +76,7 @@ var circleAmount = 0;
             // TODO 5 : Call game.checkCirclePosition on your circles.
 
             // TODO 8 : Iterate over the array
-      for (var Animate = 0; Animate < 200; Animate++)  {
+      for (var Animate = 0; Animate < 400; Animate++)  {
         physikz.updatePosition(circles[Animate]);
         game.checkCirclePosition(circles[Animate]);
 }
