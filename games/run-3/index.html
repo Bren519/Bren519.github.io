@@ -1,11 +1,111 @@
 <!DOCTYPE HTML>
 <head>
-<title>Bren's Games</title>
+    <title> Bren's website: Run 3</title>
+
+<style>
+
+@keyframes rainbowBorder {
+  0% { border: 5px solid red}
+  20% {border: 5px solid yellow}
+  40% {border: 5px solid green}
+  60% {border: 5px solid blue}
+  80% {border: 5px solid purple}
+  100% {border: 5px solid red}
+}
+ h1  {
+           font-family:monospace;
+            color:black;
+            padding:10px;
+
+        }
+
+        h2 {
+           color: green;
+
+        }
+
+        h3 {
+            font-size:50px;
+            font-family:monospace;
+            padding: 10px;
+        }
+
+body{
+   background:rgb(20, 42, 79);
+   color: rgb(45, 45, 45);
+}
+#all-contents{
+        max-width: 1000px;
+        margin: auto;
+        background-color: white;
+        border-radius:40px;
+        border: 5px solid darkblue;
+        animation: rainbowBorder 15s;
+        animation-iteration-count: infinite;
+        margin-bottom: 10px;
+}
+
+
+ nav {
+                background: rgb(black);
+                margin: 0 auto;
+                display: flex;
+
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255,255,255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: black;
+                padding: 10px;
+            }
+            li {
+            padding: 10px;
+
+            }
+
+            .content {
+                margin-right:30px;
+            }
+
+            main{
+                padding: 20px;
+                margin-bottom: 10
+            }
+
+</style>
 
 </head>
 
-<body>
-<h1> Sorry mates...This one is not working right now :P </h1>
-<h1><a href="https://Bren519.github.io/games.html">Back to games page</a></h1>
-<iframe src="https://www.crazygames.com/gameframe/run-3" width="800" height="645"  marginwidth="0" marginheight="0" hspace="0" vspace="0"  frameborder="0" scrolling="no"  webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" allowfullscreen="true"></iframe>
-</body>
+<body style="background-image:url(ao.gif)">
+        <body style="background-image:url(ao.gif)">
+           <div id="all-contents">
+                <nav>
+                    <h3>Bren's Glorious Website </h3>
+                        <ul>
+                            <li><a href="https://bren519.github.io/index.html">Home</a></li>
+                            <li><a href="https://bren519.github.io/portfolio.html">Portfolio</a></li>
+                            <li><a href="https://bren519.github.io/school.html">School Work</a></li>
+                            <li><a href="https://bren519.github.io/games.html">Games</a></li>
+                        </ul>
+                </nav>
+                <main>
+                        <p1>Run 3</p1>
+
+                        <iframe src="https://www.crazygames.com/gameframe/run-3" width="800" height="645"  marginwidth="0" marginheight="0" hspace="0" vspace="0"  frameborder="0" scrolling="no"  webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" allowfullscreen="true"></iframe>
+
+                </main>
+        </div>
+    </body>
+</html>
