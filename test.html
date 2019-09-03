@@ -1,70 +1,161 @@
-
+<!DOCTYPE html>
 <html>
+    <head>
+        <Title> Bren's Amazing Website </Title>
 
-<head>
+ <style>
+#navi body {margin:0;}
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-    <title>Text editor</title>
-
-
-    <style>
-.text_edit {
-    width: 500px;
-    height: 300px;
-    resize: none;
+#navi ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#navi {
+    margin-bottom: 20px;
+    margin-left: -10px;
+}
+#navi li {
+  float: left;
+}
+#navi li img{
+height: 48px;
 }
 
-#view_text {
-    width: 500px;
+#navi li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-    </style>
-</head>
+#navi li a:hover:not(.active) {
+  background-color: #111;
+}
 
-<body>
+#navi .active {
+  background-color: #4CAF50;
+}
+        h1  {
+           font-family:monospace;
+            color:blue;
 
-    <!-- Buttons -->
+        }
+
+        h2 {
+           color: green;
+
+        }
+
+        h3 {
+            font-size:50px;
+            font-family:monospace;
+            padding: 10px;
+        }
+
+          #all-contents {
+                max-width: 900px;
+                margin: auto;
+                background: white;
+                border-radius:40px;
+                border: 5px solid #190451;
+
+          }
+
+          body{
+              background:rgb(20, 42, 79);
+                color: rgb(45, 45, 45);
+          }
+
+          .sidebar {  margin-right: 20px;
+                padding: 10px;
+          }
+
+          .sidebar img {width: 150px;}
+
+          nav {
+                background: rgb(black);
+                margin: 0 auto;
+                display: flex;
+
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255,255,255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: black;
+                padding: 10px;
+            }
+            li {
+            padding: 10px;
+
+            }
+
+            .content {
+                margin-right:30px;
+            }
+</style>
+     </head>
 
 
 
-    <br />
+    <body style="background-image:url(ao.gif)">
+           <div id="all-contents">
+                    <h3>Bren's Glorious Website </h3>
+                    <div id="navi">
+                        <ul>
+                            <li><a href="https://bren519.github.io/index.html">Home</a></li>
+                            <li><a href="https://bren519.github.io/portfolio.html">Portfolio</a></li>
+                            <li><a href="https://bren519.github.io/school.html">School Work</a></li>
+                            <li><a href="https://bren519.github.io/games.html">Games</a></li>
+                            <li><a href="https://bren519.github.io/cac/index">Chatroom (experimental)</a></li>
+                        </ul>
+                    </div>
+                <main>
+                <div class="sidebar">
+
+                     <img src="IMG_4348.jpg">
+
+                </div>
+
+                <div class="content">
+                    <h1> Bren (Me :D) </h1>
+                    <p> A programmer!</p>
+
+                         <section class="interests">
+                        <h2>Interests:</h2>
+                        <ul>
+                            <li>3D printing</li>
+                            <li>Tennis</li>
+                            <li>Swimming</li>
+                            <li>Coding</li>
+
+                        </ul>
 
 
 
-    <!-- Text area -->
 
-    <textarea class="text_edit" id="my_text"></textarea>
+                    </section>
+                     </div>
 
-    <br />
-
-
-
-    <!-- Submit button -->
-
-  <input type="button" value="Show text" onclick="view_text()" />
-
-
-    <!-- Empty div to put the text in -->
-
-    <div id="view_text">
-        <script type="text/javascript">
-	function view_text () {
-		// Find html elements.
-		var textArea = document.getElementById('my_text');
-		var div = document.getElementById('view_text');
-
-		// Put the text in a variable so we can manipulate it.
-		var text = textArea.value;
-
-		// Print the text in the div made for it.
-		div.innerHTML = text;
-		}
-</script>
-    </div>
-
-
-
-</body>
-
+            </main>
+        </div>
+    </body>
 </html>
